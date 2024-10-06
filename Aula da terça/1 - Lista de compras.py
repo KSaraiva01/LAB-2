@@ -24,6 +24,7 @@ def menu(lista):
                 lista[alterar] = quantidade
             else:
                 print("Item não encontrado!!!")
+
         elif opc == 4:
             for nome in lista:
                 print(nome,":", lista[nome])
