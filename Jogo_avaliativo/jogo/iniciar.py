@@ -12,7 +12,7 @@ def jogar():
     while True:
         for linha in tabuleiro:
             for coluna in linha:
-                print(coluna, end="\t")
+                print(coluna, end=" ")
             print("")
 
         try:
@@ -33,7 +33,7 @@ def jogar():
                         tabuleiro[linha][coluna] = "💣"
             for linha in tabuleiro:
                 for coluna in linha:
-                    print(coluna, end="\t")
+                    print(coluna, end=" ")
                 print("")
             
             print("Você encontrou uma mina! Fim de jogo.")
