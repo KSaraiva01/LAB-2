@@ -40,8 +40,10 @@ def jogar():
             break
         
         num_minas_vizinhas = contar.contar(x, y, minas)
-        tabuleiro[x][y] = str(num_minas_vizinhas) if num_minas_vizinhas > 0 else " "
-        jogadas += 1
+        if num_minas_vizinhas > 0:
+            tabuleiro[x][y] = str(num_minas_vizinhas)
+        else:
+            tabuleiro[x][y] = " "
     pontuacoes = open('score.txt', 'a')
     pontuacoes.write(f"O jogador {nome}, tem {jogadas} pontos\n")
     pontuacoes.close()
