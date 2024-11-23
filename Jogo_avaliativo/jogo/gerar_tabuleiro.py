@@ -9,9 +9,9 @@ def tabu():
         for _ in range(tamanho):
             linha.append("⬜")
         tabuleiro.append(linha)
-    minas = set()
+    minas = []
     while len(minas) < Qminas:
         mina = (random.randint(0, tamanho - 1), random.randint(0, tamanho - 1))
-        minas.add(mina)
+        minas.append(mina)
 
     return tabuleiro, minas
